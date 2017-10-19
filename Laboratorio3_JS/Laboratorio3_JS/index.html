@@ -4,10 +4,51 @@
     <meta charset="utf-8" />
     <title>Laboratorio3_JS</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+
+       var json_elementos = {};
+
+        function agregarObjeto() {
+
+            
+            var llave = document.getElementById(_llave).;
+            var valor = document.getElementById(_valor);
+
+            json_elementos.push({ llave : valor });
+        }
+
+    </script>
+
+
 </head>
-<body>
-    <center><h1 aling ="center">LABORATORIO # 3: HTML, JavaScript y JSON</h1></center>
+<body style="background-color:#E0F8F7;">
+
+    <center><h1 aling="center">LABORATORIO # 3: HTML, JavaScript y JSON</h1></center>
+
+    <p align="center">Ingrese una llave y un valor (La llave debe ser un string y el valor puede ser un bool, un int o un string): </p>
+
+    <div align="center">
+        <label for="llave">Llave:   </label>
+        <input type="text" id="_llave" />
+    </div>
+    <br />
+    <div align="center">
+        <label for="valor">Valor:   </label>
+        <input type="text" id="_valor" />
+    </div>
+    <br />
+    <div align="center">
+        <button onclick="agregarObjeto()">
+            Agregar objeto
+        </button>
+    </div>
+    <br />
+
+    <div align="center"><img src="http://cdn.tn.com.ar/sites/default/files/styles/1366x765/public/2017/01/13/jason.jpg" width="300"></div>
+
     <script src="js/main.js"></script>
 
 </body>
 </html>
+
+
