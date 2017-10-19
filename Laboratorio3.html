@@ -1,21 +1,22 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Laboratorio3_JS</title>
     <link href="css/default.css" rel="stylesheet" />
     <script>
-
        var json_elementos = {};
 
         function agregarObjeto() {
 
-            
-            var llave = document.getElementById(_llave).;
-            var valor = document.getElementById(_valor);
+            console.log("va a agregar algo");
+            var llave = document.getElementById("_llave").value;
+            var valor = document.getElementById("_valor").value;
+            json_elementos[llave] = valor;
 
-            json_elementos.push({ llave: valor });
-            console.log(json_elementos);
+	    var str = JSON.stringify(json_elementos);
+	    document.getElementById("h1").innerHTML = str;
+	    console.log(json_elementos);
         }
 
     </script>
@@ -46,7 +47,9 @@
     <br />
 
     <div align="center"><img src="http://cdn.tn.com.ar/sites/default/files/styles/1366x765/public/2017/01/13/jason.jpg" width="300"></div>
-
+	
+	<p align="center">El respectivo JSON se mostrará aqui:</p>
+	<b><p id="h1" align="center"><p/></b>
 
 </body>
 </html>
